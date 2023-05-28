@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .card-wrapper {
+        width: 320px;
+        height: 480px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        font-family: monospace;
+        line-height: 22px;
+        position: relative;
+        overflow: hidden;
+        transition: all 1s;
+        margin: 0 auto;
+      }
+
+      .card-wrapper:hover .btn-buy {
+        transform: translate(-50%, -50%);
+      }
+
+      .card-wrapper img {
+        display: block;
+      }
+
+      .card-wrapper p {
+        padding: 16px;
+      }
+
+      .icons {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 6px;
+      }
+
+      .icons > img {
+        filter: invert(1);
+        width: 30px;
+        display: inline-block;
+      }
+
+      .btn-buy {
+        background-color: black;
+        color: snow;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 18px 20px;
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 26px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(250%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div>
+        <img src="./images/food.jpg" alt="" />
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque
+          voluptatum placeat iste tenetur est suscipit officia fuga sapiente?
+          Unde.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="icons">
+        <img src="./images/twitter-button-light-4b743ac5.svg" alt="" />
+        <img src="./images/facebook-button-light-99fde1b2.svg" alt="" />
+      </div>
+
+      <a href="" class="btn-buy">BUY ME</a>
+    </div>
+  </body>
+</html>
